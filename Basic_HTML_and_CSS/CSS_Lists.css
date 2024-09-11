@@ -1,0 +1,14 @@
+ol {
+	list-style-type: upper-roman;
+}
+
+ul {
+list-style-type: square;
+}
+
+body {
+	background-color: black;
+	color: black;
+	text-shadow: 4px 5px 12px #8B0000,1px 1px 4px #DC143C				 
+}
+
