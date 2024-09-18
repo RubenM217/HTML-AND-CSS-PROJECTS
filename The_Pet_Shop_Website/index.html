@@ -1,101 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>The Pet Shop</title>
-        <meta charset="UTF-8">
-        <meta name="discription" content="The pet shop">
-        <meta name="keywords" content="Pets,Dogs,Cats,Rabbits,Fish,Reptiles">
-        <meta name="author" content="The Tech Academy/Ruben Molina JR">
-        <meta name="viewport" content="width=divice-width, initial-scale=1.0">
-    </head>
-    <body>
-       <!--NAVBAR--> 
-       <nav>
-        <ul>
+
+<head>
+    <title>The Pet Shop</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="discription" content="The pet shop">
+    <meta name="keywords" content="Pets,Dogs,Cats,Rabbits,Fish,Reptiles">
+    <meta name="author" content="The Tech Academy/Ruben Molina JR">
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <nav class="nav-bar">
+        <ul id="nav-border">
             <li><a href="index.html">HOME</a></li>
             <li><a href="contact.html">CONTACT</a></li>
         </ul>
         <ul>
-            <a href="#cat"><li>Cats & Kittens</li></a>
-            <a href="#dog"><li>Dogs & Puppies</li></a>
-            <a href="#rabbit"><li>Rabbits</li></a>
-            <a href="#guineapig"><li>Guinea Pigs</li></a>
-            <a href="#fish"><li>Fish</li></a>
-            <a href="#reptile"><li>Reptiles</li></a>
-            <a href="#video"><li>Videos</li></a>
+            <a href="#cat">
+                <li> Cats & Kittens </li>
+            </a>
+            <a href="#dog">
+                <li> Dogs & Puppies </li>
+            </a>
+            <a href="#rabbit">
+                <li> Rabbits </li>
+            </a>
+            <a href="#guineapig">
+                <li> Guinea Pigs </li>
+            </a>
+            <a href="#fish">
+                <li> Fish </li>
+            </a>
+            <a href="#reptile">
+                <li> Reptiles </li>
+            </a>
+            <a href="#video">
+                <li> Videos </li>
+            </a>
         </ul>
-       </nav>
-       <!--HEADER-->
-       <header>
+    </nav>
+    <!--HEADER-->
+    <header>
         <div>
-            <h1>Wecome to The Pet Shop!</h1>
+            <h1 class="animate-text">Wecome to The Pet Shop!</h1>
         </div>
-       </header>
-       <!--PET IMAGES-->
-       <section>
+    </header>
+    <!--PET IMAGES-->
+    <section>
+        <div class="container">
+            <h2>Choose a Pet!</h2>
             <div>
-                <h2>Choose a Pet!</h2>
-                <div>
-                    <!--CAT IMAGE-->
-                    <div id="cat">
+                <!--CAT IMAGE-->
+                <div id="cat" class="column">
+                    <div class="image-container">
                         <h3>Cats & Kittens</h3>
                         <img src="images/cat.jpg" alt="Picture of Kittens">
+                        <div class="overlay"></div>
                     </div>
-                    <!--DOG IMAGE-->
-                    <div id="dog">
+                </div>
+                <!--DOG IMAGE-->
+                <div id="dog" class="column">
+                    <div class="image-container">
                         <h3>Dogs & Puppies</h3>
                         <img src="images/dog.jpg" alt="Picture of Dogs">
+                        <div class="overlay"></div>
                     </div>
-                    <!--RABBIT IMAGE-->
-                    <div id="rabbit">
+                </div>
+                <!--RABBIT IMAGE-->
+                <div id="rabbit" class="column">
+                    <div class="image-container">
                         <h3>Rabbits</h3>
                         <img src="images/rabbit.jpg" alt="Picture of Rabbits">
+                        <div class="overlay"></div>
                     </div>
-                    <!--GUINEA PIG IMAGE-->
-                    <div id="guineapig">
+                </div>
+                <!--GUINEA PIG IMAGE-->
+                <div id="guineapig" class="column">
+                    <div class="image-container">
                         <h3>Guinea Pigs</h3>
                         <img src="images/guineapigs.jpg" alt="Picture of guinea pigs">
+                        <div class="overlay"></div>
                     </div>
-                    <!--FISH IMAGE-->
-                    <div id="fish">
+                </div>
+                <!--FISH IMAGE-->
+                <div id="fish" class="column">
+                    <div class="image-container">
                         <h3>Fish</h3>
                         <img src="images/fish.jpg" alt="Picture of Fish">
+                        <div class="overlay"></div>
                     </div>
-                    <!--REPTILE IMAGE-->
-                    <div id="reptile">
+                </div>
+                <!--REPTILE IMAGE-->
+                <div id="reptile" class="column">
+                    <div class="image-container">
                         <h3>Reptiles</h3>
                         <img src="images/beardeddragon.jpg" alt="Picture of Reptiles">
+                        <div class="overlay"></div>
                     </div>
                 </div>
             </div>
-       </section>
-       <!--VIDEOS-->
-       <section>
+        </div>
+    </section>
+    <!--VIDEOS-->
+    <section>
         <!--DOG VIDEO-->
-        <div id="video">
+        <div id="video" class="container">
             <h3>Videos</h3>
             <iframe width="1280" height="720" src="https://www.youtube.com/embed/ng58pNPDDW4"></iframe>
         </div>
-        <blockquote cite="https://www.countryfile.com/animals/animal-quotes">"The love for all living creatures is the most noble attribute of man."
+        <blockquote cite="https://www.countryfile.com/animals/animal-quotes">"The love for all living creatures is the
+            most noble attribute of man."
             <em>Charles Darwin</em>
         </blockquote>
-       </section>
-       <!--FOOTER-->
-       <footer>
-            <table>
-                <tr>
-                    <td>
-                        <p>The Pet Shop! &copy;</p>
-                    </td>
-                    <td>
-                        <p>123 Square Ave</p>
-                        <p>Portland, OR 97204</p>
-                    </td>
-                    <td>
-                        <p>503-234-3966</p>
-                    </td>
-                </tr>
-            </table>   
-        </footer>
-    </body>
+    </section>
+    <!--FOOTER-->
+    <footer>
+        <table>
+            <tr>
+                <td>
+                    <p>The Pet Shop! &copy;</p>
+                </td>
+                <td>
+                    <p>123 Square Ave</p>
+                    <p>Portland, OR 97204</p>
+                </td>
+                <td>
+                    <p>503-234-3966</p>
+                </td>
+            </tr>
+        </table>
+    </footer>
+</body>
+
 </html>
