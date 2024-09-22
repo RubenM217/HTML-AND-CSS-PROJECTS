@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Creating Effects with CSS</title>
+
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <nav class="nav-bar">
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li class="drop">
+                <a href="#">Images</a>
+                <div class="rollover-menu">
+                    <a href="#image1">Image 1</a>
+                    <a href="#image2">Image 2</a>
+                    <a href="#image3">Image 3</a>
+                    <a href="#image4">Image 4</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!--IMAGES-->
+    <section>
+        <!--IMAGE ONE-->
+        <div id="image1" class="image-contanier">
+            <div>
+            <img src="images/img1.jpg">
+            <div class="overlay"></div>
+            </div>
+        </div>
+        <!--IMAGE TWO-->
+        <div id="image2" class="image-contanier">
+            <img src="images/img2.jpg" class="zoom">
+        </div>
+        <!--IMAGE THREE-->
+        <div id="image3" class="image-contanier">
+            <div class="circle">
+                <img src="images/img3.jpg">
+            </div>
+        </div>
+        <!-- IMAGE FOUR -->
+        <div id="image4" clss="image-contanier">
+            <div class="im4">
+            <img src="images/img4.jpg">
+            </div>
+            <div class="im"></div>
+        </div>
+    </section>
+    <!--FOOTER-->
+    <footer>
+        <div id="image4" class="footer-text">
+            <p>The Tech Academy &copy;</p>
+        </div>
+    </footer>
+</body>
+
+</html>
